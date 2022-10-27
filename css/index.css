@@ -1,0 +1,337 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  background-image: url(../img/back1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  overflow: hidden;
+  background-position:center center;
+  font-family: sans-serif;
+}
+.nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  border-radius: 10px;
+  box-sizing: initial;
+  border-left: 5px solid #fff;
+  background: #fff;
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.nav ul{
+  position: absolute;
+  top: 85px;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 40px;
+}
+.nav ul li{
+  position: relative;
+  list-style: none;
+  width: 100%;
+}
+.nav ul li a{
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+.nav ul li a:hover{
+  background-color: rgb(212, 212, 212);
+}
+
+.nav ul li a .icon{
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+
+}
+.nav ul li a .title{
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: normal;
+  float: left;
+}
+.name{
+  font-size: 34px;
+  margin-top: 20px;
+  text-align: center;
+
+}
+.subname{
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+.type{
+  font-size: 15px;
+  color: red;
+}
+
+/* ABA DO CSS DE SUB-MENU*/
+
+.search{
+  position: fixed;
+  top: 40px;
+  left: 380px;
+  bottom: 0;
+  background-color: #fff;
+  border-radius: 40px;
+  height: 40px;
+  padding: 10px;
+
+}
+.search-btn{
+  color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+
+}
+.search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  bottom: 20px;
+  color: black;
+  font-size: 15px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 380px;
+  top: 0;
+}
+.search:hover > .search-txt{
+  width: 620px;
+  padding: 0 6px;
+}
+
+.search-icon{
+  min-width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.perfil{
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  bottom: 0;
+  border-radius: 30px;
+  height: 60px;
+  padding: 10px;
+}
+.text-perfil{
+  position: fixed;
+  top: 40px;
+  right: 100px;
+  bottom: 0;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+.text-icon{
+  position: fixed;
+  top: 40px;
+  right: 80px;
+  bottom: 0;
+  padding: 10px;
+}
+
+/* ABA DO CSS DE PROJETOS
+
+.projetos{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 380px;
+  top: 140px;
+  background: white;
+  opacity: 0.6;
+}
+.title-projeto{
+  color: black;
+  padding: 10px;
+}
+.info-projeto{
+  padding: 10px;
+  margin-bottom: 24px;
+}
+.gerente{
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+  background: #EEEEEE;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 1.75);  
+  border: none;
+}
+#status{
+  background: yellow;
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+  border: none;
+}
+a:hover{
+background: rgb(68, 211, 68);
+}
+*/
+
+/*LISTA DE ADICIONAR  */
+.container{
+  padding: 20px 10px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 370px;
+  margin-top: 110px;
+  
+}
+#new-task-form {
+display: flex;
+}
+
+#new-task-input {
+flex: 1 1 0%;
+background-color: rgb(255, 255, 255);
+padding: 1rem;
+border-radius: 1rem;
+margin-right: 1rem;
+border: none;
+color: rgb(0, 0, 0);
+font-size: 1rem;
+opacity: 0.8;
+}
+
+#new-task-input::placeholder {
+color: grey;
+}
+
+#new-task-submit {
+color: var(--pink);
+font-size: 1rem;
+font-weight: 700;
+background: rgb(190, 184, 184);
+cursor: pointer;
+transition: 0.4s;
+border: none;
+color: black;
+width: 100px;
+border-radius: 20px;
+}
+
+#new-task-submit:hover {
+opacity: 0.8;
+}
+
+#new-task-submit:active {
+opacity: 0.6;
+}
+input, button {
+appearance: none;
+border: none;
+outline: none;
+background: none;
+}
+main {
+flex: 1 1 0%;
+max-width: 400px;
+width: 100%;
+margin: 0 auto;
+margin-top: 20px;
+display: inline-block;
+margin-left: 380px;
+
+}
+
+.task-list {
+padding: 1rem;
+}
+
+.task-list h2 {
+font-size: 1.5rem;
+font-weight: 300;
+color: var(--grey);
+margin-bottom: 1rem;
+  margin-left: 370px;
+  margin-bottom: 30px;
+}
+
+#tasks .task {
+display: flex;
+justify-content: space-between;
+background-color: rgb(255, 255, 255);
+padding: 1rem;
+border-radius: 1rem;
+margin-bottom: 1rem;
+  margin-top: 20px;
+}
+
+.task .content {
+flex: 1 1 0%;
+}
+
+.task .content .text {
+color: rgb(0, 0, 0);
+font-size: 1.125rem;
+width: 100%;
+display: block;
+transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+color: rgb(0, 0, 0);
+}
+
+.task .actions {
+display: flex;
+margin: 0 -0.5rem;
+  margin-left: 15px;
+}
+
+.task .actions button {
+cursor: pointer;
+margin: 0 0.5rem;
+font-size: 1.125rem;
+font-weight: 700;
+transition: 0.4s;
+}
+
+.task .actions button:hover {
+opacity: 0.8;
+}
+
+.task .actions button:active {
+opacity: 0.6;
+}
+
+.task .actions .edit {
+background: rgb(0, 0, 0);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  color: rgb(0, 0, 0);
+}
+
+.task .actions .delete {
+color: rgb(212, 41, 41);
+}
